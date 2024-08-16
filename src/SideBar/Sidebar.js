@@ -4,17 +4,17 @@ import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
 
-function Sidebar() {
+function Sidebar({ handleChange }) {
   return (
     <>
-    {/* Rembember the css to kee the sidebar still */}
+      {/* Rembember the css to kee the sidebar still */}
       <section className="sidebar">
         <div className="logo-container">
           <h1>🛒</h1>
         </div>
-        <Category />
-        <Price />
-        <Colors />
+        <Category handleChange={handleChange} />
+        <Price handleChange={handleChange} />
+        <Colors handleChange={handleChange} />
       </section>
     </>
   );
