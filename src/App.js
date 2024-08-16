@@ -80,8 +80,8 @@ function App() {
   return (
     <>
       <Sidebar handleChange={handleChange} />
-      <Navigation query={query} handleChange={handleChange} />
-      <Recommended handleChange={handleClick} />
+      <Navigation query={query} handleInputChange={handleInputChange} />
+      <Recommended handleClick={handleClick} />
       <Products result={result} />
     </>
   );
