@@ -7,10 +7,10 @@ function Category({ handleChange }) {
     <div>
       <h2 className="sidebar-title">Category</h2>
       <div>
-        <lable className="sidebar-label-container">
+        <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test" />
           <span className="checkmark"></span>All
-        </lable>
+        </label>
         <Input
           handleChange={handleChange}
           value="sneakers"

@@ -7,10 +7,10 @@ function Price({ handleChange }) {
     <div className="ml">
       <h2 className="sidebar-title price-title">Price</h2>
 
-      <lable className="sidebar-label-container">
+      <label className="sidebar-label-container">
         <input onChange={handleChange} type="radio" value="" name="test2" />
         <span className="checkmark"></span>All
-      </lable>
+      </label>
 
       <Input
         handleChange={handleChange}

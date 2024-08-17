@@ -22,9 +22,8 @@ function App() {
 
   // Filtering Items
   const filteredItems = products.filter(
-    (product) =>
-      product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !==
-      -1
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    // changed toLocalLowerCase => toLowerCase
   );
 
   // Radio Filter in sidebars
@@ -68,8 +67,8 @@ function App() {
           title={title}
           star={star}
           reviews={reviews}
-          newPrice={newPrice}
           prevPrice={prevPrice}
+          newPrice={newPrice}
         />
       )
     );
